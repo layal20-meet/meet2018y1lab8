@@ -29,7 +29,7 @@ food_stamps = []
 #Set up positions (x,y) of boxes that make up the snake
 snake = turtle.clone()
 snake.shape("circle")
-
+snake.color("blue")
 #Hide the turtle object (it's an arrow - we don't need to see it)
 turtle.hideturtle()
 
@@ -212,9 +212,9 @@ def move_snake():
       
     turtle.ontimer(move_snake,TIME_STEP)
     
-turtle.register_shape("trash.gif")
+turtle.register_shape("mouse.gif")
 food = turtle.clone()
-food.shape("trash.gif")
+food.shape("mouse.gif")
 food_pos = [(100,100), (-100,100), (-100,-100), (100,-100)]
 food_stamps=[]
 food.hideturtle()
